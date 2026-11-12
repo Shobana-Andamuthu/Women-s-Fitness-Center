@@ -3144,6 +3144,9 @@ html.anim .rv.in { opacity: 1; animation: rise .8s cubic-bezier(.2,.7,.2,1) back
 html.anim .rv.in.fromL { animation-name: riseL; }
 html.anim .rv.in.fromR { animation-name: riseR; }
 html.anim .rv.in.zoom { animation-name: pop; }
+@media (max-width: 900px) {
+  html.anim .rv.in.fromL, html.anim .rv.in.fromR { animation-name: rise; }
+}
 
 /* hover polish */
 .imgph > img.ph-img { transition: transform .7s cubic-bezier(.2,.7,.2,1); }
