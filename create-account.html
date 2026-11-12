@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account — Bloom Women's Fitness Center</title>
+    <meta name="description" content="Create your Bloom member account.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      try{var d=document.documentElement;d.dataset.theme=localStorage.getItem('theme')||'light';d.dir=localStorage.getItem('dir')||'ltr'}catch(e){}
+    </script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/auth.js"></script>
+  </head>
+  <body data-page="register" data-layout="auth">
+    <div id="loader" role="status" aria-live="polite">
+      <div class="ld">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#D81B60"/>
+          <path d="M32 10c5 7 5 14 0 22-5-8-5-15 0-22z" fill="#fff"/>
+          <path d="M14 22c8 1 14 5 18 12-8 1-15-3-18-12zM50 22c-8 1-14 5-18 12 8 1 15-3 18-12z" fill="#FFD0E0"/>
+          <path d="M18 46h28" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+          <path d="M15 41v10M49 41v10" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <b>BLOOM</b>
+        <div class="ld-bar"><i></i></div>
+        <span class="sr">Loading…</span>
+      </div>
+    </div>
+    <noscript>
+      <style>#loader{display:none}</style>
+    </noscript>
+    <div id="auth-nav"></div>
+    <main class="auth">
+      <section class="auth-img">
+        <div class="bgimg imgph" data-slot="img-66" aria-hidden="true"></div>
+        <div>
+          <span class="eyebrow">Member portal</span>
+          <h2>Join a community that <em>lifts you up</em></h2>
+          <ul class="clist">
+            <li>Free trial class and assessment</li>
+            <li>Personal workout and diet plans</li>
+            <li>Women-only studios and coaches</li>
+          </ul>
+        </div>
+      </section>
+      <section class="auth-form">
+        <div class="auth-box">
+          <h1>Create your account</h1>
+          <p>Join Bloom in a minute and start booking classes.</p>
+          <form id="authform" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" type="text" autocomplete="name">
+              <span class="err" id="name-e"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" type="email" autocomplete="email">
+              <span class="err" id="email-e"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" autocomplete="tel">
+              <span class="err" id="phone-e"></span>
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <div class="pw">
+                <input id="password" type="password" autocomplete="new-password">
+                <button type="button" aria-label="Show password"></button>
+              </div>
+              <span class="err" id="password-e"></span>
+            </div>
+            <div class="field">
+              <label for="confirm">Confirm password</label>
+              <div class="pw">
+                <input id="confirm" type="password" autocomplete="new-password">
+                <button type="button" aria-label="Show password"></button>
+              </div>
+              <span class="err" id="confirm-e"></span>
+            </div>
+            <label class="agree">
+              <input type="checkbox" id="terms">
+              <span>I agree to the Terms of Service and Privacy Policy.</span>
+            </label>
+            <span class="err" id="terms-e" style="display:block;margin:-10px 0 12px;color:#B3261E;font-size:.82rem"></span>
+            <button class="btn btn-p" type="submit">Create account</button>
+            <div class="msg" id="a-msg" role="status" style="margin-top:16px"></div>
+          </form>
+          <p class="auth-alt">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
